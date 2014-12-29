@@ -1,9 +1,9 @@
 #makefile for recognize
-create: recognize.o
+recognize: recognize.o
 	gcc -o recognize recognize.o
 
-create.o: recognize.c
+reognize.o: recognize.c
 	gcc -c recognize.c
 
 clean: *.o
-	rm -rf *.o create
+	rm -rf *.o recognize
